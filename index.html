@@ -6,32 +6,45 @@
 <title>Piscinas Crespo</title>
 <link rel="stylesheet" href="style.css">
 
-<!-- Animaciones -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
+<!-- MENU -->
+<nav>
+  <h2>Piscinas Crespo</h2>
+  <div>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
 <header class="hero">
   <div class="overlay">
-    <h1 data-aos="fade-down">Piscinas Crespo</h1>
-    <p data-aos="fade-up">Construcción y mantenimiento en Parets</p>
-    <a href="#contacto" class="btn">Solicitar presupuesto</a>
+    <h1 data-aos="fade-down">Piscinas que impresionan</h1>
+    <p data-aos="fade-up">Diseño, construcción y mantenimiento en Parets</p>
+    <a href="#contacto" class="btn">Pedir presupuesto</a>
   </div>
 </header>
 
-<section data-aos="fade-up">
-  <h2>Servicios</h2>
+<!-- SERVICIOS -->
+<section id="servicios">
+  <h2 data-aos="fade-up">Nuestros Servicios</h2>
   <div class="cards">
-    <div class="card">Construcción de piscinas</div>
-    <div class="card">Mantenimiento</div>
-    <div class="card">Limpieza</div>
-    <div class="card">Reparaciones</div>
+    <div class="card" data-aos="zoom-in">Construcción</div>
+    <div class="card" data-aos="zoom-in">Mantenimiento</div>
+    <div class="card" data-aos="zoom-in">Reparación</div>
+    <div class="card" data-aos="zoom-in">Limpieza</div>
   </div>
 </section>
 
-<section data-aos="zoom-in">
-  <h2>Galería</h2>
+<!-- GALERIA -->
+<section id="galeria">
+  <h2 data-aos="fade-up">Trabajos Realizados</h2>
   <div class="gallery">
     <img src="piscina1.jpg">
     <img src="piscina2.jpg">
@@ -39,8 +52,27 @@
   </div>
 </section>
 
-<section id="contacto" data-aos="fade-up">
-  <h2>Contacto</h2>
+<!-- ANTES DESPUES -->
+<section class="antes">
+  <h2 data-aos="fade-up">Antes y Después</h2>
+  <div class="compare">
+    <img src="antes.jpg">
+    <img src="despues.jpg">
+  </div>
+</section>
+
+<!-- OPINIONES -->
+<section id="opiniones">
+  <h2 data-aos="fade-up">Clientes satisfechos</h2>
+  <div class="reviews">
+    <div class="review">“Trabajo increíble, muy rápidos” ⭐⭐⭐⭐⭐</div>
+    <div class="review">“La piscina quedó perfecta” ⭐⭐⭐⭐⭐</div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <h2 data-aos="fade-up">Contacto</h2>
   <p>📞 600 000 000</p>
   <a href="https://wa.me/34600000000" class="btn">WhatsApp</a>
 </section>
@@ -53,9 +85,8 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-AOS.init();
+AOS.init({duration: 1000});
 </script>
 
 </body>
-</html>
 </html>
