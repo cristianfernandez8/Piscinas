@@ -1,86 +1,103 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: #f5f5f5;
+  font-family: Arial;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 /* HERO */
 .hero {
   height: 100vh;
   background: url('https://images.unsplash.com/photo-1560448075-bb485b067938') center/cover;
-  position: relative;
 }
 
 .overlay {
   background: rgba(0,0,0,0.5);
-  color: white;
   height: 100%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-h1 {
-  font-size: 3em;
-}
-
+/* BOTON */
 .btn {
   background: #00b4d8;
   padding: 12px 25px;
+  border-radius: 30px;
   color: white;
   text-decoration: none;
-  border-radius: 30px;
-  margin-top: 10px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #0077b6;
 }
 
 /* SECCIONES */
 section {
-  padding: 50px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
+/* CARDS */
 .cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
   background: white;
   margin: 10px;
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
   width: 200px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.1);
 }
 
-/* GALERÍA */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
+/* GALERIA */
 .gallery img {
   width: 300px;
   margin: 10px;
   border-radius: 10px;
-  transition: 0.3s;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
+/* ANTES DESPUES */
+.compare {
+  display: flex;
+  justify-content: center;
+}
+
+.compare img {
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* REVIEWS */
+.review {
+  background: #f4f4f4;
+  margin: 10px auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
 }
 
 /* WHATSAPP */
@@ -88,12 +105,10 @@ section {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25d366;
+  background: green;
   color: white;
   padding: 15px;
   border-radius: 50%;
-  font-size: 20px;
-  text-decoration: none;
 }
 
 /* FOOTER */
