@@ -1,41 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Piscinas Crespo</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piscinas Crespo</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Animaciones -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-  <h1>Piscinas Crespo</h1>
-  <p>Construcción y mantenimiento de piscinas en Parets y alrededores</p>
+<header class="hero">
+  <div class="overlay">
+    <h1 data-aos="fade-down">Piscinas Crespo</h1>
+    <p data-aos="fade-up">Construcción y mantenimiento en Parets</p>
+    <a href="#contacto" class="btn">Solicitar presupuesto</a>
+  </div>
 </header>
 
-<section>
+<section data-aos="fade-up">
   <h2>Servicios</h2>
-  <ul>
-    <li>Construcción de piscinas</li>
-    <li>Mantenimiento</li>
-    <li>Limpieza</li>
-    <li>Reparaciones</li>
-  </ul>
+  <div class="cards">
+    <div class="card">Construcción de piscinas</div>
+    <div class="card">Mantenimiento</div>
+    <div class="card">Limpieza</div>
+    <div class="card">Reparaciones</div>
+  </div>
 </section>
 
-<section>
+<section data-aos="zoom-in">
   <h2>Galería</h2>
-  <p>Aquí irán fotos de tus trabajos</p>
+  <div class="gallery">
+    <img src="piscina1.jpg">
+    <img src="piscina2.jpg">
+    <img src="piscina3.jpg">
+  </div>
 </section>
 
-<section>
+<section id="contacto" data-aos="fade-up">
   <h2>Contacto</h2>
-  <p>Tel: 600 000 000</p>
-  <p>WhatsApp disponible</p>
+  <p>📞 600 000 000</p>
+  <a href="https://wa.me/34600000000" class="btn">WhatsApp</a>
 </section>
+
+<a href="https://wa.me/34600000000" class="whatsapp">💬</a>
 
 <footer>
   <p>© 2026 Piscinas Crespo</p>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
 </body>
+</html>
 </html>
